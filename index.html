@@ -1,65 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <title>website gue</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Davine</title>
 
-        <style>
-            Body {
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: #f2f2f2;
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .profil {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #hasil {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .foto {
+            width: 200px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .deskripsi {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .profil {
+                margin: 20px auto;
+                padding: 20px;
             }
 
-            .profil{
-                width: 600px;
-                margin: 50px auto;
-                padding: 30px;
-                background-color: white;
-                border-radius: 15px;
+            h1 {
+                font-size: 26px;
             }
-            h1{
-                margin-bottom: 20px;
-            }
+
             #hasil {
-                font-size: 18px;
-                margin-bottom: 20px;
+                font-size: 16px;
             }
-            .foto{
-                width: 200px;
-                height: auto;
-                border-radius: 10px;
+
+            .deskripsi {
+                font-size: 16px;
             }
-            .deksripsi {
-                font-size: 17px;
-                line-height: 1.6;
-                margin-top: 20-x;
-            }
-        </style>
-    </head>
+        }
+    </style>
+</head>
+
+<body>
+
     <div class="profil">
+
         <h1>BIODATA DAVINE</h1>
+
+        <p id="hasil"></p>
+
         <script>
-            let nama = "davine ijlal danadyaksa";
+            let nama = "Davine Ijlal Danadyaksa";
             let umur = 16;
-            let atlet ="futsal";
-            document.write(
-                "<p id='hasil'>" +
-                    "nama: " + nama +
-                    " | umur: " + umur +
-                    " | atlet: " + atlet +
-                    "</p>"
-            );
+            let atlet = "Futsal";
+
+            document.getElementById("hasil").textContent =
+                "Nama: " + nama +
+                " | Umur: " + umur +
+                " | Atlet: " + atlet;
         </script>
-        <img src="gambar davine.jpeg" class="foto" alt="foto">
-        <p class="deklarasi"> 
-            Davine Ijlal Danadyaksa adalah seorang pelajar yang 
-            Memiliki minat besar terhadap olahraga, khususnya futsal.
+
+        <img src="gambar davine.jpeg" class="foto" alt="Foto Davine">
+
+        <p class="deskripsi">
+            Davine Ijlal Danadyaksa adalah seorang pelajar yang
+            memiliki minat besar terhadap olahraga, khususnya futsal.
             Ia senang bermain sepak bola dan terus berusaha
-            Mengembangkan kemampuan serta keterampilannya
+            mengembangkan kemampuan serta keterampilannya.
         </p>
 
     </div>
-    
-    </body>
+
+</body>
 </html>
+```
